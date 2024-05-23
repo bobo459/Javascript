@@ -1,0 +1,29 @@
+p{
+   font-style: italic; /* italic 폰트 기울기 */
+}
+
+/* '.' : 클래스 / '#' : id ->위치를 포함한 경우 */
+.classSelect{
+  color: dodgerblue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* 글꼴 */
+  font-size: 24px;    /*크기 */
+  font-style: normal; /* 스타일 */
+  font-weight: 700;   /*두께 :700은 보통 bold */
+}
+
+/* 텍스트 스타일 */
+#idSelect{
+  color: green;
+  /* text-decoration: line-through; */
+  text-decoration: underline;
+  
+}
+
+.s1 {
+  /* text-transform: capitalize; //첫문자만 대문자 */
+  text-transform: uppercase; /* 전체 대문자 */
+  letter-spacing: 4px; /* 글자사이의 거리 */
+  word-spacing: 16px; /* 단어 간의 거리 */
+  border: 1px solid gray;  /* 박스 만들어주기 */
+  background-color: rgba(95, 158, 160,0.5);  
+}
