@@ -8,4 +8,10 @@
  : contents의 배치와 관련된 문법 <br>
  : position, margin, padding...등 <br>
   <br>
-3. 
+3. Image
+ : 이미지 추가, 수정  <br>
+ : 배경이미지 추가, 수정 <br>
+  <br>
+4. 애니메이션 <br>
+ <br>
+5. 반응형 웹을 만들기 위한 문법 <br>
