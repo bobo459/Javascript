@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+     var x = 10;      // var는 이중선언 허용
+     console.log(x);
+     var x = 100;     //중복변수 선언으로 " x " 변수가 2개가 사용되면 Java에서는 에러가 날것이다.
+     console.log(x);  //자바스크립트 내의 var형 변수의 문제.
+
+     y = 1000;        //Java에서 자료형이 없어서 에러가 날 상황인데, 자바스크립트는 에러가 안남. 임시저장하는 이런 현상을 
+     console.log(y);  //변수의 호이스팅(hoisting)
+     
+     let a = 1;
+     //lat a = 2;  //2중선언을 막아놨다. 에러!! let과 const는 더이상 이중선언을 허용하지 않음.
+
+     b=2;      // 앞에 var가 생략되어 있다. var는 전역변수로 전체페이지에 영향을 줄수 있음.
+     console.log(b);
+
+    //  var x = 10;
+    // function displayNumber(){
+    //   console.log("x is" + x);
+    //   console.log("x is" + z);
+    //   let z = 20;
+    // }
+    function displayNumber(){
+      console.log("z is" + z);
+      var z = 20;
+      if(z>=10){
+        let w;   //지역변수, z는 w 보다 상위스코프이다. let은 블록스코프에 하정되어 있다.
+        console.log("z는 두자리 숫자")
+      }
+    }displayNumber();
+    
+    // let, const 정리
+    // 1. 호이스팅된 변수의 선언에는 사용할 수 없다.
+    //   이유는 let과 const가 블록스코프(제한된 스코프)를 가지므로 호이스팅된
+    //   최상위스코프를 가질 수 없기 때문
+    // 2. 재선언 안됨.
+          let v1 = 10;
+        //let v1 = 100; //재선언 에러.
+    // 3. 재할당은 let은 가능, const는 불가능
+          let v2 = 1;
+          v2 = 2;
+          const v3 = 1;
+        //v3 = 2; //에러. 재할당 불가능.
+        
+  </script>
+</body>
+</html>
