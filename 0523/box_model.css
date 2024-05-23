@@ -1,0 +1,36 @@
+*{ /* 모든 마진과 패딩이 없는 상태로 시작하겠다 */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.s1{
+  font-size: 16px;
+  border: 1px solid black;
+   margin: 10px; /*보더라인 외부 여백 <위, 오른쪽, 아래, 왼쪽 순이다> */
+   padding: 5px; /* 보더 라인 내부에서 글자 주변에서 지정한 크기만큼 떨어지겠다 */
+   display:block; 
+}
+.s2{
+  font-size: 16px;
+  border: 1px solid black;
+   margin: 10px; 
+   padding: 5px;
+   display: inline-block; /* 강제로 인라인 속성으로 바꾸어 주었다. 
+                            대신 인라인속성과 블럭속성을 가지고 있어서 가로,세로의 마진을 가질수 있게 만들어준다. */
+}
+.boxsizing{
+  width: 300px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 0 auto;
+  padding: 10px;
+ /* box-sizing: border-box; //박스의 보더까지 합쳐서 300으로 인식하게 만들어줌 */
+}
+.boxsizing2{
+  width: 300px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 0 auto;
+  padding: 50px;
+  /* box-sizing: border-box; */
+}
