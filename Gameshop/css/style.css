@@ -1,7 +1,14 @@
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Poppins,GmarketSansMedium;
 }
 .container{
   width: 70%; /* 컴퓨터는 화면이 크기때문에 70% 사용. 모바일은 짧기 때문에 브라우저인 경우에 80~90%까지 사용한다. */
@@ -27,10 +34,12 @@
 }
 .content{
   width: 100%;
+  padding: 20px;
   background-color: khaki;
   display : grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+  padding: 20px;
 }
 .footer{
   width: 100%;
@@ -53,8 +62,17 @@
   cursor: pointer;
 }
 .game{
-  width: 200px;
-  height: 200px;
-  border: 1px solid black;
+  /* width: 200px;
+  height: 200px; */
+  /* border: 1px solid black; */
+  border-radius: 5px;
   background-color: white;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+  padding-bottom: 20px;
+}
+.image{
+  width: 100%;
+}
+.content p{
+  margin: 0 0 5px 10px;
 }
